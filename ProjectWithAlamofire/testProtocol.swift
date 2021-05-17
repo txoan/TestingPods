@@ -8,8 +8,8 @@
 import Foundation
 
 public protocol TestProtocol {
-    func firstTest() -> Bool
-    func secondTest() -> Int
+    func firstTest(param: Bool) -> Bool
+    func secondTest(param: Int) -> Int
 }
 
 public class TestProtocolImpl: TestProtocol {
@@ -17,14 +17,14 @@ public class TestProtocolImpl: TestProtocol {
         
     }
 
-    public  func firstTest() -> Bool {
-        print("firstTest")
-        return true
+    public  func firstTest(param: Bool) -> Bool {
+        print("FrameWork A: firstTest 2 version")
+        return param
     }
 
 
-    public func secondTest() -> Int {
-        print("seconTest")
-        return 0
+    public func secondTest(param: Int) -> Int {
+        print("FrameWork A: secondTest 2 version")
+        return param
     }
 }

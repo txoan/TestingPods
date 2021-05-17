@@ -14,9 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let test: TestProtocol = TestProtocolImpl()
-        _ = test.firstTest()
+        _ = test.firstTest(param: false)
     }
-
 
 }
 
