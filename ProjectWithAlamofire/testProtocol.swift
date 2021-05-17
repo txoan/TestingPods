@@ -13,6 +13,9 @@ public protocol TestProtocol {
 }
 
 public class TestProtocolImpl: TestProtocol {
+    public init() {
+        
+    }
 
     public  func firstTest() -> Bool {
         print("firstTest")
